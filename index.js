@@ -1,5 +1,7 @@
 const express = require("express");
 const app = express();
+const imageRouter = require("./routers/image");
+const userRouter = require("./routers/users");
 
 const PORT = process.env.PORT || 4000;
 
@@ -7,6 +9,10 @@ const PORT = process.env.PORT || 4000;
 app.use(express.urlencoded({ extended: false }));
 // parse application/json
 app.use(express.json());
+
+// Routers
+app.use("/images", imageRouter);
+app.use("/users", userRouter);
 
 app.get("/", (req, res, next) => {
   res.json("Hello World!");
