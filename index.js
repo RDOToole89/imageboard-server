@@ -1,6 +1,8 @@
 const express = require("express");
 const imageRouter = require("./routers/imageRouter");
 const userRouter = require("./routers/userRouter");
+const authRouter = require("./routers/authRouter");
+
 const bcrypt = require("bcrypt");
 const app = express();
 
@@ -12,6 +14,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 
 // Routers
+app.use(authRouter);
 app.use("/images", imageRouter);
 app.use("/users", userRouter);
 

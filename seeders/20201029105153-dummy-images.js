@@ -44,6 +44,62 @@ module.exports = {
           createdAt: new Date(),
           updatedAt: new Date(),
         },
+        {
+          title: "High rise",
+          url:
+            "https://images.unsplash.com/photo-1603900507826-ea715b87271c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=965&q=80",
+
+          createdAt: new Date(),
+          updatedAt: new Date(),
+        },
+        {
+          title: "Spirat grayscale",
+          url:
+            "https://images.unsplash.com/photo-1603896977410-bba34a4d5084?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80",
+
+          createdAt: new Date(),
+          updatedAt: new Date(),
+        },
+        {
+          title: "Coffee by the bay",
+          url:
+            "https://images.unsplash.com/photo-1603783032800-9c13b1c65c5f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=907&q=80",
+
+          createdAt: new Date(),
+          updatedAt: new Date(),
+        },
+        {
+          title: "Corona falls",
+          url:
+            "https://images.unsplash.com/photo-1603847575936-6d09ce4cae90?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1001&q=80",
+
+          createdAt: new Date(),
+          updatedAt: new Date(),
+        },
+        {
+          title: "Colors",
+          url:
+            "https://images.unsplash.com/photo-1603864133490-83c0f55a80d4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1951&q=80",
+
+          createdAt: new Date(),
+          updatedAt: new Date(),
+        },
+        {
+          title: "Red bastard",
+          url:
+            "https://images.unsplash.com/photo-1603858428220-295d290809d2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
+
+          createdAt: new Date(),
+          updatedAt: new Date(),
+        },
+        {
+          title: "Fully loaded",
+          url:
+            "https://images.unsplash.com/photo-1602526213012-e8bfd0f21501?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=991&q=80",
+
+          createdAt: new Date(),
+          updatedAt: new Date(),
+        },
       ],
       {}
     );
