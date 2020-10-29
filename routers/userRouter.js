@@ -28,7 +28,7 @@ router.post("/", async (req, res, next) => {
           "Server did not receive all necessary information, please provide a fullname, password and email address."
         );
     }
-
+    // const hashedPassword = bcrypt.hashSync(password, 10);
     const newUser = await User.create({ fullName, password, email });
     res.json(newUser);
   } catch (e) {

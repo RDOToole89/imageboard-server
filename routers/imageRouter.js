@@ -5,8 +5,14 @@ const Image = require("../models").image;
 router = new Router();
 
 router.get("/", async (req, res, next) => {
+  // limit indicates how many results are on the page
+  // offset determines how many results to skip
+
+  const limit = req.query.limit || 5;
+  const offset = req.query.offset || 0;
+
   try {
-    const allImages = await Image.findAll();
+    const allImages = await Image.findAll({ limit, offset });
     if (!allImages) {
       return res.status(404).send("Images not found");
     }
