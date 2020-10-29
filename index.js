@@ -1,7 +1,7 @@
 const express = require("express");
+const imageRouter = require("./routers/imageRouter");
+const userRouter = require("./routers/userRouter");
 const app = express();
-const imageRouter = require("./routers/image");
-const userRouter = require("./routers/users");
 
 const PORT = process.env.PORT || 4000;
 
