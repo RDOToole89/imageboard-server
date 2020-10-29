@@ -1,6 +1,7 @@
 const express = require("express");
 const { Router } = express;
 const User = require("../models").user;
+const bcrypt = require("bcrypt");
 
 router = new Router();
 
@@ -28,8 +29,8 @@ router.post("/", async (req, res, next) => {
           "Server did not receive all necessary information, please provide a fullname, password and email address."
         );
     }
-    // const hashedPassword = bcrypt.hashSync(password, 10);
-    const newUser = await User.create({ fullName, password, email });
+    const hashedPassword = bcrypt.hashSync(password, 10);
+    const newUser = await User.create({ fullName, password: hashedPassword, email });
     res.json(newUser);
   } catch (e) {
     next(e);
